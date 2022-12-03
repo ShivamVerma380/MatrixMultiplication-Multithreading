@@ -65,25 +65,37 @@ public class HorseActivity extends AppCompatActivity {
 
         long startTime = System.currentTimeMillis();
 
-        while (progressBarSH1.getProgress()<=100){
-            progressBarSH1.incrementProgressBy(10);
-        }
-
-        while (progressBarSH2.getProgress()<=100){
-            progressBarSH2.incrementProgressBy(10);
-        }
-
-        while (progressBarSH3.getProgress()<=100){
-            progressBarSH3.incrementProgressBy(10);
-        }
-        while (progressBarSH4.getProgress()<=100){
-            progressBarSH4.incrementProgressBy(10);
-        }
+        fetchSingleThread();
 
         Toast.makeText(getApplicationContext(),"Time taken in ms: "+String.valueOf(System.currentTimeMillis()-startTime),Toast.LENGTH_SHORT).show();
 
 
 
+    }
+
+    private void fetchSingleThread() {
+        while (progressBarSH1.getProgress()<100){
+            progressBarSH1.incrementProgressBy(gallop());
+        }
+
+        while (progressBarSH2.getProgress()<100){
+            progressBarSH2.incrementProgressBy(gallop());
+        }
+
+        while (progressBarSH3.getProgress()<100){
+            progressBarSH3.incrementProgressBy(gallop());
+        }
+        while (progressBarSH4.getProgress()<100){
+
+            progressBarSH4.incrementProgressBy(gallop());
+        }
+    }
+
+    private static int gallop(){
+        Random rand = new Random();
+        int upperBound = 15;
+        int lowerBound = 6;
+        return rand.nextInt(upperBound - lowerBound) + lowerBound;
     }
 
 //
