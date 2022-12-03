@@ -12,8 +12,6 @@ import com.brewingjava.multithreading.R;
 
 public class HorseActivity extends AppCompatActivity {
 
-    private EditText etNumHorses;
-    private Button btnStartRace;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,15 +20,7 @@ public class HorseActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
-        etNumHorses = findViewById(R.id.etNumHorses);
-        btnStartRace = findViewById(R.id.btnStartRace);
 
-        btnStartRace.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),etNumHorses.getText().toString(),Toast.LENGTH_SHORT).show();
-            }
-        });
 
 
     }

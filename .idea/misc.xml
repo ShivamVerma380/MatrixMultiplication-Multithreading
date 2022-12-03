@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Multithreading/app/src/main/res/layout/activity_horse.xml" value="0.1546875" />
+        <entry key="..\:/Multithreading/app/src/main/res/layout/activity_horse.xml" value="0.536" />
+        <entry key="..\:/Multithreading/app/src/main/res/layout/activity_horse_progress.xml" value="0.1546875" />
         <entry key="..\:/Multithreading/app/src/main/res/layout/activity_main.xml" value="0.1546875" />
       </map>
     </option>
