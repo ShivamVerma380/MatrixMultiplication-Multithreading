@@ -51,7 +51,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        tools:listitem=""/>
+        tools:listitem="@layout/item_threads"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
