@@ -9,7 +9,7 @@
     >
 
     <TextView
-        android:id="@+id/txtHorse"
+        android:id="@+id/txtSingThreadedHorse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -19,34 +19,209 @@
         android:textColor="@color/black"
         android:fontFamily="sans-serif-black"
         android:textSize="20sp"
-        android:text="Enter Nos Of Horses"
+        android:text="Single Threading"
         />
-    <EditText
-        android:id="@+id/etNumHorses"
+    <TextView
+        android:id="@+id/txtSH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSingThreadedHorse"
+        android:layout_margin="5dp"
+        android:text="Horse 1"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:padding="5dp"
+        />
+    <ProgressBar
+        android:id="@+id/progressBarSH1"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="40"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/txtSH1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSingThreadedHorse"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtSH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSH1"
+        android:layout_margin="5dp"
+        android:text="Horse 2"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:padding="5dp"
+        />
+    <ProgressBar
+        android:id="@+id/progressBarSH2"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="40"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/txtSH2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSH1"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtSH3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSH2"
+        android:layout_margin="5dp"
+        android:text="Horse 3"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:padding="5dp"
+        />
+    <ProgressBar
+        android:id="@+id/progressBarSH3"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="40"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/txtSH1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSH2"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/txtSH4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSH3"
+        android:layout_margin="5dp"
+        android:text="Horse 4"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:padding="5dp"
+        />
+    <ProgressBar
+        android:id="@+id/progressBarSH4"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="40"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/txtSH1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSH3"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/txtMultiThreadedHorse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtHorse"
-        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtSH4"
+        android:layout_margin="50dp"
         android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
         android:textSize="20sp"
-        android:hint="1"
-        android:textColorHint="#808080"
-        android:inputType="number"
+        android:text="Multiple Threading"
         />
-    <Button
-        android:id="@+id/btnStartRace"
+    <TextView
+        android:id="@+id/txtMH1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNumHorses"
-        android:layout_margin="20dp"
-        android:text="Start Race"
-        android:backgroundTint="#ABCDEF"
+        app:layout_constraintTop_toBottomOf="@+id/txtMultiThreadedHorse"
+        android:layout_margin="5dp"
+        android:text="Horse 1"
         android:textColor="@color/black"
-        android:padding="10dp"
+        android:fontFamily="sans-serif-black"
+        android:padding="5dp"
         />
+    <ProgressBar
+        android:id="@+id/progressBarMH1"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="40"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/txtMH1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMultiThreadedHorse"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtMH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMH1"
+        android:layout_margin="5dp"
+        android:text="Horse 2"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:padding="5dp"
+        />
+    <ProgressBar
+        android:id="@+id/progressBarMH2"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="40"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/txtMH2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMH1"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtMH3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMH2"
+        android:layout_margin="5dp"
+        android:text="Horse 3"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:padding="5dp"
+        />
+    <ProgressBar
+        android:id="@+id/progressBarMH3"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="40"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/txtMH1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMH2"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/txtMH4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMH3"
+        android:layout_margin="5dp"
+        android:text="Horse 4"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:padding="5dp"
+        />
+    <ProgressBar
+        android:id="@+id/progressBarMH4"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="40"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/txtMH2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMH3"
+        android:layout_margin="10dp"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
