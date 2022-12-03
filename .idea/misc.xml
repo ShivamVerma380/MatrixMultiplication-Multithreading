@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
-=======
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Multithreading/app/src/main/res/layout/activity_horse.xml" value="0.536" />
+        <entry key="..\:/Multithreading/app/src/main/res/layout/activity_horse.xml" value="0.264" />
         <entry key="..\:/Multithreading/app/src/main/res/layout/activity_horse_progress.xml" value="0.1546875" />
         <entry key="..\:/Multithreading/app/src/main/res/layout/activity_main.xml" value="0.1546875" />
       </map>
@@ -19,5 +15,4 @@
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
->>>>>>> e94c0aee87e4564f41fb85ff9470cabd4a78fa52
 </project>
